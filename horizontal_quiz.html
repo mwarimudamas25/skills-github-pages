@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="rw">
+<head>
+  <meta charset="UTF-8">
+  <title>IKIZAMI CY'AMATEGEKO Y'UMUHANDA</title>
+  <style>
+    body { font-family: Arial, Century Gothic; background: #f2f2f2; padding: 15px; }
+    .question { display: none; background: #fff; padding: 15px; border-radius: 6px; margin-bottom: 20px; }
+    .question.active { display: block; }
+    .answers label { display: block; margin-left: 15px; }
+    #result { font-weight: bold; margin-top: 20px; }
+    button { padding: 10px 20px; background: #007bff; color: #fff; border: none; cursor: pointer; margin-top: 15px; }
+    .navigation { margin-top: 20px; }
+  </style>
+</head>
+<body>
+<h2>ITOZE GUSUBIZA IBIBAZO UTSINDIRE PROVISOIRE MU GIHE GITO!</h2>
+  <form id="quizForm">
+    <!-- Example Question 1 -->
+    <div class="question">
+      1. Uretse ku byerekeye imihanda iromboreje y’ibisate byinshi n’imihanda yimodoka igice cy’umuhanda kiri hakurya y’umurongo mugari wera ucibwa ku muhanda ngo ugaragaze inkombe mpimbano zawo kigenewe ibi bikurikira:
+      <div class="answers">
+        <label><input type="radio" name="q1" value="0"> A.guhagararwamo umwanya muto gusa</label><br>
+        <label><input type="radio" name="q1" value="0"> B.guhagararwamo umwanya munini gusa</label><br>
+        <label><input type="radio" name="q1" value="1"> C.guhagararwamo umwanya muto n’umunini</label><br>
+        <label><input type="radio" name="q1" value="0"> D.nta gisubizo cy’ukuri kirimo</label>
+      </div>
+    </div>
+     <!-- Example Question 2 -->
+     <div class="question">
+      2. Amatara ndangaburumbarare agomba kubonwa nijoro igihe ijuru rikeye n’umuyobozi w’ikinyabiziga kiri mu ntera ya:
+      <div class="answers">
+        <label><input type="radio" name="q2" value="0"> A.m 50 nibura</label><br>
+        <label><input type="radio" name="q2" value="0"> B.m 100</label><br>
+        <label><input type="radio" name="q2" value="0"> C.m 150</label><br>
+        <label><input type="radio" name="q2" value="1"> D.m 200 nibura</label>
+      </div>
+    </div>
+    <!-- Example Question 3 -->
+    <div class="question">
+      3. Amatara ndangambere na ndanganyuma y’imodoka zitarengeje m 6 z’uburebure na m 2 z’ubugari habariwemo imitwaro kandi nta kindi kinyabiziga kiziritseho ashobora gusimburwa n’amatara yo guhagarara umwanya munini iyo ibyo binyabiziga bihagaze umwanya muto cyangwa munini mu nsisiro bibangikanye ku ruhande rw’umuhanda. Ayo matara arangwa n’amabara akurikira:
+      <div class="answers">
+        <label><input type="radio" name="q3" value="0"> A.umweru cyangwa umuhondo imbere</label><br>
+        <label><input type="radio" name="q3" value="0"> B.umutuku cyangwa umuhondo inyuma</label><br>
+        <label><input type="radio" name="q3" value="1"> C.A na B ni ibisubizo by’ukuri</label><br>
+        <label><input type="radio" name="q3" value="0"> D.nta gisubizo cy’ukuri kirimo</label>
+      </div>
+    </div>
+     <!-- Example Question 4 -->
+     <div class="question">
+      4. Imirongo y’ingabo z’igihugu zigendera kuri gahunda n’utundi dutsiko twose tw’abanyamaguru nk’imperekerane cyangwa udutsiko tw’abanyeshuri iyo bitagishoboka kubona neza muri m200, bagaragazwa n’itara ryera imbere naho inyuma ni itara ry’umutuku ariko iyo uburebure bw’iyo mirongo cyangwa bw’utwo dutsiko burenga m6 impande zatwo cyangwa zayo zigaragazwa ku buryo bukurikira:
+      <div class="answers">
+        <label><input type="radio" name="q4" value="0"> A.itara rimwe cyangwa menshi yera</label><br>
+        <label><input type="radio" name="q4" value="0"> B.amatara menshi y’umuhondo</label><br>
+        <label><input type="radio" name="q4" value="0"> C.amatara menshi asa n’icunga rihishije</label><br>
+        <label><input type="radio" name="q4" value="1"> D.ibisubizo byose ni byo</label>
+      </div>
+    </div>
+     <!-- Example Question 5 -->
+     <div class="question">   
+  <p>5. Ndashaka gukata ibumoso. Imodoka y’icyatsi yaje irahagarara. Ninde ufite uburenganzira bwo gutambuka mbere?:</p>
+  <a href="https://imgbb.com/"><img src="https://i.ibb.co/nskN6WXj/Wixcode1-Q5.png" alt="Wixcode1-Q5" border="0"></a>
+  <div class="answers">
+    <label><input type="radio" name="q5" value="0"> A.mfite uburenganzira bwo gutambuka mbere</label><br>
+    <label><input type="radio" name="q5" value="1"> B.imodoka y’icyatsi ifite uburenganzira bwo gutambuka mbere</label><br>
+    <label><input type="radio" name="q5" value="0"> C.twembi ntaburenganzira bwo gutambuka mbere gusa tugomba gutambukana ubwitonzi</label><br>
+    <label><input type="radio" name="q5" value="0"> D.ntagisubizo nakimwe kirimo</label>
+  </div>
+</div>
+     <!-- Example Question 6 -->
+     <div class="question">
+      6. Ibinyabiziga bikurikira bigomba kugira ibikoresho by’ihoni byumvikanira mu ntera ya m 20:
+      <div class="answers">
+        <label><input type="radio" name="q6" value="0"> A.amapikipiki</label><br>
+        <label><input type="radio" name="q6" value="1"> B.velomoteri</label><br>
+        <label><input type="radio" name="q6" value="0"> C.ibinyabiziga bigendeshwa na moteri bidapakiye</label><br>
+        <label><input type="radio" name="q6" value="0"> D.nta gisubizo cy’ukuri kirimo</label>
+      </div>
+    </div>
+      <!-- Example Question 7 -->
+     <div class="question">
+      7. Ibinyabiziga bikurikira bigomba kugira ibikoresho by’ihoni byumvikanira mu ntera ya m 20:
+      <div class="answers">
+        <label><input type="radio" name="q7" value="0"> A.umukara</label><br>
+        <label><input type="radio" name="q7" value="1"> B.umweru</label><br>
+        <label><input type="radio" name="q7" value="0"> C.ubururu</label><br>
+        <label><input type="radio" name="q7" value="0"> D.umutuku</label>
+      </div>
+    </div>
+    <!-- Example Question 8 -->
+     <div class="question">
+      8. Icyapa kibuza kunyura ku bindi binyabiziga byose uretse ibinyamitende ibiri n’amapikipiki adafite akanyabiziga ku ruhande gifite ibimenyetso by’amabara akurikira:
+      <div class="answers">
+        <label><input type="radio" name="q8" value="0"> A.umweru n’umukara</label><br>
+        <label><input type="radio" name="q8" value="1"> B.umutuku n’umukara</label><br>
+        <label><input type="radio" name="q8" value="0"> C.ubururu</label><br>
+        <label><input type="radio" name="q8" value="0"> D.A na B ni ibisubizo by’ukuri</label>
+      </div>
+    </div>
+    <!-- Example Question 9 -->
+     <div class="question">
+      9. Amahoni y’ibinyabiziga bigendeshwa na moteri agomba kohereza ijwi ry’injyana imwe rikomeza kandi ridacengera amatwi ariko ibinyabiziga bikurikira bishobora kugira ihoni ridasanzwe ridahuye n’ibivuzwe haruguru:
+      <div class="answers">
+        <label><input type="radio" name="q9" value="0"> A.ibinyabiziga ndakumirwa</label><br>
+        <label><input type="radio" name="q9" value="0"> B.ibinyabiziga bikora ku mihanda</label><br>
+        <label><input type="radio" name="q9" value="0"> C.ibinyabiziga bifite ubugari burenze m 2.10</label><br>
+        <label><input type="radio" name="q9" value="1"> D.A na B ni ibisubizo by’ukuri</label>
+      </div>
+    </div>
+   <!-- Example Question 10 -->
+     <div class="question">   
+  <p>10. Ngomba:</p>
+  <a href="https://ibb.co/Fbk6GKQ8"><img src="https://i.ibb.co/nsqrhbXQ/Wixcode1-Q10.png" alt="Wixcode1-Q10" border="0"></a>
+  <div class="answers">
+    <label><input type="radio" name="q10" value="0"> A.guhagarara igihe gito kuri icyi cyapa cy’umuhanda</label><br>
+    <label><input type="radio" name="q10" value="1"> B.guhagarara ngatanga inzira kuri metero 100 ntaragera kuri icyi cyapa</label><br>
+    <label><input type="radio" name="q10" value="0"> C.gutanga inzira nkanahagarara iyo ari ngombwa muri m100 ntaragera kuri icyi cyapa</label><br>
+    <label><input type="radio" name="q10" value="0"> D.nta gisubizo cy’ukuri kirimo</label>
+  </div>
+</div>
+  <!-- Example Question 11 -->
+     <div class="question">
+      11. Amatara ndangacyerekezo agomba kuba agizwe n’ibintu bifashe ku rumuri rumyasa, biringaniye ku buryo bigira umubare utari igiharwe ku mpande z’imbere n’inyuma z’ikinyabiziga ayo matara aba afite amabara akurikira:
+      <div class="answers">
+        <label><input type="radio" name="q11" value="0"> A.amatara y’imbere aba yera cyangwa ari umuhondo</label><br>
+        <label><input type="radio" name="q11" value="0"> B.ay’inyuma aba atukura cyangwa asa n’icunga rihishije</label><br>
+        <label><input type="radio" name="q11" value="1"> C.A na B ni ibisubizo by’ukuri</label><br>
+        <label><input type="radio" name="q11" value="0"> D.ay’inyuma aba asa n’icunga rihishije</label>
+      </div>
+    </div>
+<!-- Example Question 12 -->
+     <div class="question">
+      12. Amatara ndangacyerekezo agomba kuba agizwe n’ibintu bifashe ku rumuri rumyasa, biringaniye ku buryo bigira umubare utari igiharwe ku mpande z’imbere n’inyuma z’ikinyabiziga ayo matara aba afite amabara akurikira:
+      <div class="answers">
+        <label><input type="radio" name="q12" value="1"> A.ibinyabiziga bidapakiye kandi bitajya birenza umuvuduko wa km 25 mu isaha ahateganye</label><br>
+        <label><input type="radio" name="q12" value="0"> B.ibinyabiziga bya police bijya ahatarenga km 25 uvuye aho biba</label><br>
+        <label><input type="radio" name="q12" value="0"> C.A na B ni ibisubizo by’ukuri</label><br>
+        <label><input type="radio" name="q12" value="0"> D.nta gisubizo cy’ukuri kirimo</label>
+      </div>
+    </div>
+<!-- Example Question 13 -->
+     <div class="question">
+      13. Amatara ndangacyerekezo agomba kuba agizwe n’ibintu bifashe ku rumuri rumyasa, biringaniye ku buryo bigira umubare utari igiharwe ku mpande z’imbere n’inyuma z’ikinyabiziga ayo matara aba afite amabara akurikira:
+      <div class="answers">
+        <label><input type="radio" name="q13" value="1"> A.mu gihe ibigendera mu muhanda ari byinshi kimwe no mu duce tw’inzira nyabagendwa aho kunyuranaho bibujijwe</label><br>
+        <label><input type="radio" name="q13" value="0"> B.igihe ibigendera mu muhanda ari byinshi</label><br>
+        <label><input type="radio" name="q13" value="0"> C.mu duce tw’inzira nyabagendwa aho kunyuranaho bibujijwe</label><br>
+        <label><input type="radio" name="q13" value="0"> D.nta gisubizo cy’ukuri kirimo</label>
+      </div>
+    </div>
+<!-- Example Question 14 -->
+     <div class="question">
+      14. Nta tara na rimwe cyangwa utugarurarumuri bishobora kuba bifunze kuburyo igice cya byo cyo hasi cyane kimurika kitaba kiri hasi ya cm 40 kuva ku butaka igihe ikinyabiziga kidapakiye ariko ibyo ntibikurikizwa ku matara akurikira:
+      <div class="answers">
+        <label><input type="radio" name="q14" value="0"> A.Amatara Kamenabihu</label><br>
+        <label><input type="radio" name="q14" value="0"> B.amatara yo gusubira inyuma</label><br>
+        <label><input type="radio" name="q14" value="1"> C.A na B ni ibisubizo by’ukuri</label><br>
+        <label><input type="radio" name="q14" value="0"> D.nta gisubizo cy’ukuri kirimo</label>
+      </div>
+    </div>
+<!-- Example Question 15 -->
+     <div class="question">   
+  <p>15. Mpagaze mu murongo wo guhagarara umwanya muto:</p>
+  <a href="https://ibb.co/d0rd0Kr3"><img src="https://i.ibb.co/Gv0KvP01/Wixcode1-Q15.png" alt="Wixcode1-Q15" border="0"></a>
+  <div class="answers">
+    <label><input type="radio" name="q15" value="0"> A.Nshobora gukata iburyo</label><br>
+    <label><input type="radio" name="q15" value="1"> B.Nshobora gukata ibumoso</label><br>
+    <label><input type="radio" name="q15" value="0"> C.Nshobora gukata ibumoso cyangwa iburyo</label><br>
+    <label><input type="radio" name="q15" value="0"> D.Ntagisubizo cy’ukuri kirimo</label>
+  </div>
+</div>
+<!-- Example Question 16 -->
+     <div class="question">
+      16. Nta tara na rimwe cyangwa utugarurarumuri bishobora kuba bifunze kuburyo igice cya byo cyo hasi cyane kimurika kitaba kiri hasi ya cm 40 kuva ku butaka igihe ikinyabiziga kidapakiye ariko ibyo ntibikurikizwa ku matara akurikira:
+      <div class="answers">
+        <label><input type="radio" name="q16" value="1"> A.metero 150 kugeza kuri 200</label><br>
+        <label><input type="radio" name="q16" value="0"> B.metero 100 kugeza kuri 150</label><br>
+        <label><input type="radio" name="q16" value="0"> C.metero 50 kugeza kuri 100</label><br>
+        <label><input type="radio" name="q16" value="0"> D.nta gisubizo cy’ukuri kirimo</label>
+      </div>
+    </div>
+<!-- Example Question 17 -->
+     <div class="question">
+      17. Inkombe z’inzira nyabagendwa cyangwa z’umuhanda zishobora kugaragazwa n’ibikoresho ngarurarumuri. Ibyo bikoresho bigomba gushyirwaho ku buryo abagenzi babibona ku buryo bukurikira
+      <div class="answers">
+        <label><input type="radio" name="q17" value="1"> A.babona iburyo bwabo ibyibara ritukura cyangwa ibisa n’icunga rihishije</label><br>
+        <label><input type="radio" name="q17" value="0"> B.ibumoso babona iby’ibara ryera</label><br>
+        <label><input type="radio" name="q17" value="1"> C.A na B ni ibisubizo by’ukuri</label><br>
+        <label><input type="radio" name="q17" value="0"> D.nta gisubizo cy’ukuri kirimo</label>
+      </div>
+    </div>
+<!-- Example Question 18 -->
+     <div class="question">
+      18.Iyo tumuritswe n’amatara y’urugendo y’i kinyabiziga utugarurarumuri tugomba n’ijoro, igihe ijuru rikeye kubonwa n’umuyobozi w’ikinyabiziga kiri mu ntera ikurikira:
+       <div class="answers">
+        <label><input type="radio" name="q18" value="0"> A.metero 100</label><br>
+        <label><input type="radio" name="q18" value="1"> B.metero 150</label><br>
+        <label><input type="radio" name="q18" value="0"> C.metero 200</label><br>
+        <label><input type="radio" name="q18" value="0"> D.nta gisubizo cy’ukuri kirimo</label>
+      </div>
+    </div>
+<!-- Example Question 19 -->
+     <div class="question">
+      19.Ibinyabiziga bigendeshwa na moteri, hatarimo velomoteri n’ibinyabiziga bidapakiye umuvuduko wabyo udashobora kurenga km 50 mu isaha ahateganye bigomba kuba bifite ibikoresho by’ihoni byumvikanira mu ntera ikurikira:
+
+       <div class="answers">
+        <label><input type="radio" name="q19" value="0"> A.metero 200</label><br>
+        <label><input type="radio" name="q19" value="0"> B.metero 150</label><br>
+        <label><input type="radio" name="q19" value="1"> C.metero 100</label><br>
+        <label><input type="radio" name="q19" value="0"> D.metero 50</label>
+      </div>
+    </div>
+<!-- Example Question 20 -->
+     <div class="question">   
+  <p>20. Kuri iki cyapa cyo mu muhanda cya mbere kintegeka:</p>
+  <a href="https://ibb.co/x8jknB6X"><img src="https://i.ibb.co/k687LwX5/Wixcode1-Q20.png" alt="Wixcode1-Q20" border="0"></a>
+  <div class="answers">
+    <label><input type="radio" name="q20" value="0"> A.Kugendera ku muvuduko uri hejuru ya km 30/h</label><br>
+    <label><input type="radio" name="q20" value="0"> B.kutarenza umuvuduko wa km 30/h</label><br>
+    <label><input type="radio" name="q20" value="1"> C.birabujijwe kugendera kumuvuduko uri hejuru ya km 30/h</label><br>
+    <label><input type="radio" name="q20" value="0"> D.nta gisubizo cyukuri kirimo</label>
+  </div>
+</div>
+       
+    </script>
+
+    <div class="navigation">
+      <button type="button" onclick="prevQuestion()">⏪ Subira Inyuma</button>
+      <button type="button" onclick="nextQuestion()">Komeza ⏩</button>
+      <button type="button" onclick="submitQuiz()">Ohereza Ibisubizo</button>
+    </div>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    let currentQuestion = 0;
+
+    function showQuestion(index) {
+      const questions = document.querySelectorAll('.question');
+      questions.forEach(q => q.classList.remove('active'));
+      if (index >= 0 && index < questions.length) {
+        questions[index].classList.add('active');
+      }
+    }
+
+    function nextQuestion() {
+      const questions = document.querySelectorAll('.question');
+      if (currentQuestion < questions.length - 1) {
+        currentQuestion++;
+        showQuestion(currentQuestion);
+      }
+    }
+
+    function prevQuestion() {
+      if (currentQuestion > 0) {
+        currentQuestion--;
+        showQuestion(currentQuestion);
+      }
+    }
+
+    function submitQuiz() {
+      const total = 20;
+      let score = 0;
+      for (let i = 1; i <= total; i++) {
+        const answers = document.getElementsByName(`q${i}`);
+        for (const ans of answers) {
+          if (ans.checked && ans.value === "1") {
+            score++;
+            break;
+          }
+        }
+      }
+
+      const passed = score >= 12;
+      const color = passed ? 'green' : 'red';
+      const message = passed
+        ? '✅ WATSINZE, KOMEREZA AHO!'
+        : '❌ WATSINZWE! ONGERA IMYITOZO!';
+
+      document.getElementById("result").innerHTML = `
+        <p style="color: ${color}; font-weight: bold;">
+          Wabonye amanota: ${score} / ${total}<br>${message}
+        </p>
+      `;
+    }
+  </script>
+</body>
+</html>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const quizForm = document.getElementById("quizForm");
+        for (let i = 1; i <= 20; i++) {
+          const qDiv = document.createElement("div");
+          qDiv.className = "question";
+          qDiv.id = `q${i}`;
+          qDiv.innerHTML = `
+            <p><strong>Ibibazo ${i}:</strong> Iki ni ikibazo cya ${i} (shyiramo ikibazo nyacyo hano).</p>
+            <div class="answers">
+              <label><input type="radio" name="q${i}" value="0"> Igisubizo A</label><br>
+              <label><input type="radio" name="q${i}" value="1"> Igisubizo B (cyiza)</label><br>
+              <label><input type="radio" name="q${i}" value="0"> Igisubizo C</label><br>
+              <label><input type="radio" name="q${i}" value="0"> Igisubizo D</label>
+            </div>
+          `;
+          quizForm.insertBefore(qDiv, document.querySelector(".navigation"));
+        }
+        document.querySelector(".question").classList.add("active");
+      });
+    </script>
+
+    <div class="navigation">
+      <button type="button" onclick="prevQuestion()">⏪ Subira Inyuma</button>
+      <button type="button" onclick="nextQuestion()">Komeza ⏩</button>
+      <button type="button" onclick="submitQuiz()">Ohereza Ibisubizo</button>
+    </div>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    let currentQuestion = 0;
+
+    function showQuestion(index) {
+      const questions = document.querySelectorAll('.question');
+      questions.forEach(q => q.classList.remove('active'));
+      if (index >= 0 && index < questions.length) {
+        questions[index].classList.add('active');
+      }
+    }
+
+    function nextQuestion() {
+      const questions = document.querySelectorAll('.question');
+      if (currentQuestion < questions.length - 1) {
+        currentQuestion++;
+        showQuestion(currentQuestion);
+      }
+    }
+
+    function prevQuestion() {
+      if (currentQuestion > 0) {
+        currentQuestion--;
+        showQuestion(currentQuestion);
+      }
+    }
+
+    function submitQuiz() {
+      const total = 20;
+      let score = 0;
+      for (let i = 1; i <= total; i++) {
+        const answers = document.getElementsByName(`q${i}`);
+        for (const ans of answers) {
+          if (ans.checked && ans.value === "1") {
+            score++;
+            break;
+          }
+        }
+      }
+
+      const passed = score >= 12;
+      const color = passed ? 'green' : 'red';
+      const message = passed
+        ? '✅ WATSINZE, KOMEREZA AHO!'
+        : '❌ WATSINZWE! ONGERA IMYITOZO!';
+
+      document.getElementById("result").innerHTML = `
+        <p style="color: ${color}; font-weight: bold;">
+          WABONYE AMANOTA: ${score} / ${total}<br>${message}
+        </p>
+      `;
+ } else {
+        width++;
+        document.getElementById("progressFill").style.width = width + "%";
+      }
+    }, 100); // 100ms * 100 = 10 seconds
+   }
+  </script>
+</body>
+</html>
+<button onclick="window.location.href='https://mwarimudamas.wixsite.com/mwarimudamas#homepage'">SUBIRA KU BINDI BIZAMI</button>
+
